@@ -6,9 +6,9 @@ y4=[0,2,4,6]
 loss=[0,0,0,0]
 
 for i in range(len(y)):
-    loss[0]=(y1[i]-y[i])**2
-    loss[1]=(y2[i]-y[i])**2
-    loss[2]=(y3[i]-y[i])**2
-    loss[3]=(y4[i]-y[i])**2
+    loss[0]+=(y1[i]-y[i])**2
+    loss[1]+=(y2[i]-y[i])**2
+    loss[2]+=(y3[i]-y[i])**2
+    loss[3]+=(y4[i]-y[i])**2
 print(loss)
-print(loss/4)
+print([0.25*i for i in loss])
